@@ -1,0 +1,513 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+img{
+    max-width: 100%;
+}
+
+.menu{
+    background-color: rgb(44, 44, 44);
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    display: block;
+    padding: 0.25em 0.4em;
+}
+
+.menu a:hover{
+    background-color: rgb(90, 88, 88);
+}
+
+.menu-icono{
+    display: none;
+    font-size: 2.5em;
+    cursor: pointer;
+    color: white;
+    padding: 0.2em 0.4em;
+    text-align: left;
+    width: 6%;
+}
+
+.menu-secciones{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-secciones li{
+    flex: 1;
+}
+
+#menu-toggle{
+    display: none;
+}
+
+.menu-secciones img{
+    width: 16.5%;
+    color: white;
+}
+
+.activado{
+    background-color: rgb(90, 88, 88);
+}
+
+.cajalogoytitulo{
+    margin: 0em auto;
+}
+
+.logo{
+    display: inline-block;
+    width: 10em;
+    vertical-align: top;
+    margin: 0.5em;
+}
+.logo img{
+    display: inline-block;
+}
+
+.encabezado{
+    background-color: rgb(29, 29, 29);
+    text-align: center;
+}
+
+.texto_header{
+    width: 60%;
+    display: inline-block;
+    margin: 0.5em;
+    padding-top: 2.4em;
+
+}
+
+.texto_header h1{
+    color: rgb(192, 27, 27);
+    font-size: 2.2em;
+    text-align: center;
+}
+
+.texto_header p{
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.seccion{
+    width: 70%;
+    margin: 1em auto;
+}
+
+.caja img{
+    border-bottom: 2px solid black;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.caja{
+    border: 2px rgb(0, 0, 0) solid;
+    width: 30%;
+    text-align: left;
+    display: inline-block;
+    margin: 0.4em;
+    border-radius: 5px;
+    box-shadow: 0px 3px 3px 0px rgb(85, 85, 85);
+}
+
+.caja h3{
+    padding: 0.3em;
+    font-size: medium;
+}
+
+.caja p{
+    display: inline-block;
+    width: 92%;
+    padding: 0.3em;
+    font-size: medium;
+    text-decoration: solid;
+}
+
+.botoncomprar{
+    width: 92%;
+    display: inline-block;
+    text-align: right;
+    margin-bottom: 2%;
+}
+
+button{
+    padding: 0.3em; 
+    border: 1px black solid;
+    background-color: rgb(44, 44, 44);
+    border-radius: 10px;
+    color: white;
+}
+
+button:hover{
+    background-color: rgb(192, 27, 27);
+
+}
+
+.esconder_texto{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+footer{
+    background-color: rgb(211, 211, 211);
+}
+
+.cajonfooter{
+    text-align: center;
+    margin-top: 2em;
+    padding-top: 2em;
+}
+
+.caja_footer{
+    width: 29%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 1em 0em ;
+    overflow: hidden;
+}
+
+.caja_ubicacion{
+    width: 29%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 1em 0em ;
+    overflow: hidden;
+}
+
+.caja_contactos{
+    width: 29%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    margin: 1em 0em;
+}
+
+.caja_contactos i{
+    font-size: x-large;
+    color: rgb(192, 27, 27);
+}
+
+.caja_contactos h3, .caja_contactos p{
+    padding-bottom: 0.8em;
+}
+
+.caja_footer img{
+    max-width: 40%;
+}
+
+.buscador{
+    width: 85%;
+    margin: 0 auto;
+}
+
+.textobuscar{
+    width: 40%;
+    padding: 0.6em 0.4em;
+    border: 2px black solid;
+    border-radius: 10px 0px 0px 10px;
+    background-color: rgb(219, 219, 219);
+}
+
+.boton_buscar{
+    border-radius: 0 10px 10px 0;
+    padding: 0.6em 0.4em;
+    border: 2px black solid;
+    margin-left: -0.5em;
+}
+
+@media screen and (min-width: 600px) and (max-width:999px) {
+    .menu-secciones{
+        flex-direction: column;
+        display: none;
+    }
+
+    .menu-secciones img{
+        width: 6%;
+        color: white;
+    }
+
+    .menu-icono{
+        display: block;
+    }
+
+    #menu-toggle:checked + .menu-icono + .menu-secciones{
+        display: flex;
+    }
+
+    .logo{
+        display: inline-block;
+        width: 6em;
+        vertical-align: top;
+        margin: 0.5em;
+    }
+
+    .texto_header{
+        width: 60%;
+        display: inline-block;
+        margin: 0.5em;
+        padding-top: 0.5em;
+    
+    }
+
+    .texto_header h1{
+        color: rgb(192, 27, 27);
+        font-size: 2.1em;
+        text-align: center;
+    }
+    
+    .texto_header p{
+        color: white;
+        font-size: 1.3em;
+        text-align: center;
+    }
+
+    .seccion{
+        width: 75%;
+        margin: 1em auto;
+    }
+    
+    .caja img{
+        border-bottom: 2px solid black;
+        border-radius: 5px 5px 0px 0px;
+    }
+    
+    .caja{
+        border: 2px rgb(0, 0, 0) solid;
+        width: 45.5%;
+        text-align: left;
+        display: inline-block;
+        margin: 0.4em;
+        border-radius: 5px;
+        box-shadow: 0px 3px 3px 0px rgb(85, 85, 85);
+    }
+    
+    .caja h3{
+        padding: 0.3em;
+        font-size: medium;
+    }
+    
+    .caja p{
+        display: inline-block;
+        width: 92%;
+        padding: 0.3em;
+        font-size: medium;
+        text-decoration: solid;
+    }
+    
+    .botoncomprar{
+        width: 92%;
+        display: inline-block;
+        text-align: right;
+        margin-bottom: 2%;
+    }
+
+    .texto_largo{
+    }
+
+    .esconder_texto{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .cajonfooter{
+        text-align: center;
+        margin-top: 2em;
+        padding-top: 2em;
+    }
+    
+    .caja_footer{
+        width: 20%;
+        display: inline-block;
+        vertical-align: top;
+        margin: 1em 0em ;
+        overflow: hidden;
+    }
+    
+    .caja_ubicacion{
+        width: 29%;
+        display: inline-block;
+        vertical-align: top;
+        margin: 1em 0em ;
+        overflow: hidden;
+    }
+    
+    .caja_contactos{
+        width: 35%;
+        display: inline-block;
+        vertical-align: top;
+        text-align: left;
+        margin: 1em 0em;
+    }
+    
+    .caja_contactos i{
+        font-size: medium;
+        color: rgb(192, 27, 27);
+    }
+    
+    .caja_contactos h3, .caja_contactos p{
+        padding-bottom: 0.8em;
+    }
+    
+    .caja_footer img{
+        max-width: 70%;
+    }
+}
+
+@media screen and (max-width:599px){
+
+    .menu-secciones{
+        flex-direction: column;
+        display: none;
+    }
+
+    .menu-secciones img{
+        width: 9%;
+        color: white;
+    }
+
+    .menu-icono{
+        display: block;
+    }
+
+    #menu-toggle:checked + .menu-icono + .menu-secciones{
+        display: flex;
+    }
+    
+    .logo{
+        display: inline-block;
+        width: 4em;
+        vertical-align: top;
+        margin: 0.5em;
+    }
+
+    .texto_header{
+        width: 60%;
+        display: inline-block;
+        margin: 0.5em;
+        padding-top: 0.5em;
+    
+    }
+
+    .texto_header h1{
+        color: rgb(192, 27, 27);
+        font-size: 1.8em;
+        text-align: center;
+    }
+    
+    .texto_header p{
+        color: white;
+        font-size: 0.9em;
+        text-align: center;
+    }
+
+    .seccion{
+        width: 82%;
+        margin: 1em auto;
+    }
+
+    .caja img{
+        width: 27%;
+        display: inline-block;
+        border-bottom: none;
+    }
+    
+    .caja{
+        border: none;
+        border-bottom: 2px rgb(0, 0, 0) solid;
+        width: 98%;
+        text-align: left;
+        display: inline-block;
+        margin: 0.4em;
+        border-radius: 0px;
+        box-shadow: none;
+        margin: 0.3em auto;
+    }
+
+    .texto_largo{
+        width: 71%;
+        display: inline-block;
+    }
+    
+    .caja h3{
+        padding: 0.3em;
+        font-size: medium;
+    }
+    
+    .caja p{
+        display: inline-block;
+        width: 92%;
+        padding: 0.3em;
+        font-size: medium;
+        text-decoration: solid;
+    }
+    
+    .botoncomprar{
+        width: 98%;
+        display: inline-block;
+        text-align: right;
+        margin-bottom: 2%;
+    }
+
+    .esconder_texto{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+
+    .cajonfooter{
+        text-align: center;
+        margin-top: 2em;
+        padding-top: 2em;
+    }
+    
+    .caja_footer{
+        width: 20%;
+        display: inline-block;
+        vertical-align: top;
+        margin: 1em 0em ;
+        overflow: hidden;
+    }
+    
+    .caja_ubicacion{
+        width: 29%;
+        display: none;
+        vertical-align: top;
+        margin: 1em 0em ;
+        overflow: hidden;
+    }
+    
+    .caja_contactos{
+        width: 65%;
+        display: inline-block;
+        vertical-align: top;
+        text-align: left;
+        margin: 1em 0em;
+    }
+    
+    .caja_contactos i{
+        width: 7%;
+        font-size: medium;
+        color: rgb(192, 27, 27);
+    }
+    
+    .caja_contactos h3, .caja_contactos p{
+        padding-bottom: 0.8em;
+    }
+    
+    .caja_footer img{
+        max-width: 85%;
+    }
+}
